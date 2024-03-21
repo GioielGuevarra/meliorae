@@ -17,13 +17,14 @@ body {
 }
 
 .navbar-container {
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .navbar {
     /* make it sticky */
     max-width: 1500px;
     margin: auto;
+    background-color: #161614;
     border: 2px solid #6C6B67;
     border-radius: 3em;
     padding: 1em 1.5em;
@@ -42,6 +43,10 @@ body {
     color: #ffff;
 }
 
+.nav-links a:hover {
+    color: #FFB800;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -55,6 +60,11 @@ body {
     border-radius: 1.5em;
     padding: 0.5em 2em;
     cursor: pointer;
+}
+
+.signup:hover {
+    background-color: #e4a300;
+    color: #ffff;
 }
 
 .spotlight {
@@ -80,5 +90,6 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
+    object-fit: cover;
     z-index: 0;
 }
