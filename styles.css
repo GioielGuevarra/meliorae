@@ -12,15 +12,18 @@ body {
 .first-section {
     background-color: #040505;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-container {
-    padding: 10px 20px;
-    margin-bottom: 5em;
+    padding: 20px;
 }
 
 .navbar {
     /* make it sticky */
+    max-width: 1500px;
+    margin: auto;
     border: 2px solid #6C6B67;
     border-radius: 3em;
     padding: 1em 1.5em;
@@ -41,7 +44,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 100px;
+    align-items: center;
+    gap: 2em;
 }
 
 .signup {
@@ -50,20 +54,21 @@ body {
     border: none;
     border-radius: 1.5em;
     padding: 0.5em 2em;
+    cursor: pointer;
 }
 
 .spotlight {
+    flex: 1;
     position: relative;
-    height: 100%;
+    padding: 60px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .slogan {
-    position: relative;
-    margin: 2em;
     font-size: 3em;
+    z-index: 1;
 }
 
 .stellar {
@@ -71,7 +76,9 @@ body {
 }
 
 .brownie {
-    position: absolute;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
 }
