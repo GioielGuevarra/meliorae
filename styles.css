@@ -17,17 +17,14 @@ body {
 }
 
 .navbar-container {
-    padding: 15px 20px;
+    /* make it sticky */
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding: 20px;
 }
 
 .navbar {
-    /* make it sticky */
-    max-width: 1500px;
-    margin: auto;
-    background-color: #161614;
-    border: 2px solid #6C6B67;
-    border-radius: 3em;
-    padding: 1em 1.5em;
+    max-width: 1180px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,10 +47,36 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 40px;
 }
 
-.signup {
+.nav-icons {
+    fill: #ffff;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-icons a {
+    fill: #ffff;
+}
+
+.profile-icon:hover,
+.cart-icon:hover {
+    fill: #FFB800;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* .signup {
     font: inherit;
     background-color: #FFB800;
     border: none;
@@ -65,19 +88,20 @@ body {
 .signup:hover {
     background-color: #e4a300;
     color: #ffff;
-}
+} */
 
 .spotlight {
     flex: 1;
     position: relative;
-    padding: 60px 20px 20px 20px;
+    padding: 200px 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .slogan {
-    font-size: 3em;
+    font-size: 40px;
+    text-align: center;
     z-index: 1;
 }
 
