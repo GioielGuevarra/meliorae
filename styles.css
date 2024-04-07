@@ -253,36 +253,74 @@ body {
     width: 300px;
     margin-top: 50px;
 }
+
 .fourth-section {
     background-color: #0F0F0F;
-    padding: 100px 20px;
-    text-align: center;
+    padding: 0px 20px 100px;
 }
-.products{
-    padding: 0px 20px 100px
-}
-.products-container {
-    /*border: 2px solid white;*/
-    display:grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 21%;
-    gap: 30px;
 
+.products {
+    padding: 0px 20px 100px;
+}
+
+.products-container {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
-.product-card{
-    max-width: 700px;
-    background-color: #191818;
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+.product-card {
+    /* background-color: #191818; */
+    border: 2px solid #3f3d3d;
+    padding: 40px;
+    border-radius: 10px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-    border-radius: 15px;
+    gap: 20px;
 }
-.product-button{
+
+.product-card:hover .product-name{
+    color: #D1AB47;
+}
+
+.fourth-section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-name {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-description{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.product-button {
     background-color: #D1AB47;
     font: inherit;
     font-weight: 500;
@@ -292,45 +330,7 @@ body {
     cursor: pointer;
     width: 100%;
 }
-.product-image{
-    position: relative;
-    height: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 25px;
-}
-.product-name{
-    font-size: 25px;
-    font-weight: 500;
-    color: #ffff
-}
-.product-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 25px;
-    gap: 20px;
-}
-.product-description{
-    font-size: 19px;
-    font-weight: 300;
-    color: #ffff;
-}
-.product-price{
-    font-size: 25px;
-    font-weight: 300;
-    color:#ffff
-}
 
-.product-image .prod-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
 .product-button:hover{
     background-color: #9b7a28;
     font-weight: 600;
