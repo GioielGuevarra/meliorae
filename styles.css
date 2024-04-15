@@ -267,17 +267,40 @@ body {
     max-width: 1700px;
     margin: auto;
     display: flex;
-    gap: 40px;
+    gap: 42px;
+    padding-bottom: 30px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
 
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
 ::-webkit-scrollbar {
-    display: none; 
+    width: 10px;
+    background: #0F0F0F;
+    border-radius: 10px;
 }
 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #191818; 
+    border-radius: 10px;
+}
+  
+
+.products-container:hover::-webkit-scrollbar-thumb {
+    background: #3f3d3d;
+    border-radius: 10px;
+}
+
+
 .product-card {
-    /* background-color: #191818; */
+   
     border: 2px solid #3f3d3d;
     padding: 40px;
     border-radius: 10px;
