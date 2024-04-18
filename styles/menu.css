@@ -1,3 +1,7 @@
+.nav-links a:first-child {
+    color: #FFB800;
+}
+
 .menu-section {
     background-color: #0F0F0F;
     padding: 100px 20px;
@@ -5,7 +9,6 @@
 }
 
 .categories-container {
-    border: 1px solid red;
     max-width: 1180px;
     margin: auto;
     display: flex;
@@ -13,6 +16,18 @@
     padding-bottom: 20px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+}
+
+.categories-container a:first-child {
+    color: #FFB800;
+}
+
+.categories-container a:not(:first-child) {
+    filter: brightness(50%);
+}
+
+.categories-container a:not(:first-child):hover {
+    filter: none;
 }
 
 .category-card {
