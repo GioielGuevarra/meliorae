@@ -41,7 +41,8 @@ body {
     font-weight: 600;
 }
 
-.nav-links a {
+.nav-links a,
+.logo a{
     text-decoration: none;
     color: #ffff; 
 }
