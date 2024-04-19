@@ -89,13 +89,11 @@
 }
 
 .products-container {
-    max-width: 1300px;
+    max-width: 1260px;
     margin: auto;
-    display: flex;
-    gap: 42px;
-    padding-bottom: 30px;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -150,6 +148,7 @@
     font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
+    height: 60px;
 }
 
 .product-price {
@@ -160,6 +159,7 @@
 .product-description{
     font-size: 18px;
     font-weight: 300;
+    height: 81px;
 }
 
 .product-button {

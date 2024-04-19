@@ -238,6 +238,7 @@
     font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
+    height: 60px;
 }
 
 .product-price {
@@ -248,6 +249,7 @@
 .product-description{
     font-size: 18px;
     font-weight: 300;
+    height: 81px;
 }
 
 .product-button {
