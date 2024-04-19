@@ -87,6 +87,7 @@ body {
 
 .sixth-section {
     background-color: #0F0F0F;
+    border-top: 1px solid rgb(59, 59, 59);
     padding: 50px 20px;
 }
 
