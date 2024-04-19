@@ -177,6 +177,24 @@ ul {
 }
    
 ::-webkit-scrollbar-thumb {
-    background: #191818; 
+    background: #1f1d1d; 
     border-radius: 10px;
 }
+
+@media screen and (max-width: 970px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-g1 {
+        text-align: center;
+        gap: 15px;
+    } 
+
+    .footer-g2,
+    .footer-g3 {
+        text-align: center;
+    }
+  }
