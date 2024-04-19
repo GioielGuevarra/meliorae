@@ -201,21 +201,6 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
-
-::-webkit-scrollbar {
-    height: 12px;
-    background: #0F0F0F;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
-   
-::-webkit-scrollbar-thumb {
-    background: #0F0F0F; 
-    border-radius: 10px;
-}
   
 .products-container:hover::-webkit-scrollbar-thumb {
     background: #3f3d3d;

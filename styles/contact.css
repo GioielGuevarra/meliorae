@@ -1,0 +1,79 @@
+.contact-section {
+    background-color: #0F0F0F;
+    padding: 100px 20px;
+    text-align: center;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.contact-container {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.textfield{
+    background-color: #191818;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.contact-us{
+    padding: 0px 20px 100px;
+    background-color: #0F0F0F;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+.submit-button{
+    background-color: #D1AB47;
+    color: #0F0F0F;
+    font: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 60px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-button:hover{
+    background-color: #9b7a28;
+    font-weight: 600;
+}
+.facebook-link a,
+.logo a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffff; 
+    font-size: 23px;
+}
+
+.facebook-logo{
+    padding: 0px 10px;
+}
+
+.facebook-redirect{
+    padding: 30px 20px 100px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.facebook-msg{
+    padding: 20px 20px;
+}
