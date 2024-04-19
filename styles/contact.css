@@ -31,7 +31,7 @@ form textarea {
     resize: vertical;
 }
 .contact-us{
-    padding: 0px 0px 100px;
+    padding: 0px 0px 50px;
     background-color: #0F0F0F;
     text-align: center;
     letter-spacing: 10px;
@@ -80,4 +80,8 @@ form textarea {
 }
 .facebook-msg{
     padding: 20px 20px;
+}
+
+textarea {
+    resize: none;
 }
