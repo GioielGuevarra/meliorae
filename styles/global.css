@@ -166,3 +166,17 @@ ul {
     background-color: #9b7a28;
     font-weight: 600;
 }
+
+::-webkit-scrollbar {
+    height: 12px;
+    background:#0F0F0F;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #191818; 
+    border-radius: 10px;
+}
