@@ -1,0 +1,23 @@
+.categories-container a:first-child {
+    color: #ffff;
+}
+
+.categories-container a:nth-child(2) {
+    color: #FFB800;
+    filter: none;
+}
+
+.categories-container a:not(:nth-child(2)) {
+    filter: brightness(50%);
+}
+
+.categories-container a:not(:nth-child(2)):hover,
+.categories-container a:not(:nth-child(2)):hover {
+    filter: none;
+    color: #FFB800;     
+}
+
+.categories-container a:nth-child(2) {
+    color: #FFB800;
+    filter: none;
+}
