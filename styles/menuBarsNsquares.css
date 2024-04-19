@@ -1,0 +1,12 @@
+.categories-container a:nth-child(2) {
+    color: #ffff;
+}
+
+.categories-container a:nth-child(3) {
+    color: #FFB800;
+    filter: none;
+}
+
+.categories-container a:not(:nth-child(3)) {
+    filter: brightness(50%);
+}
