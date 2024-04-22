@@ -24,17 +24,26 @@ body{
     flex:1 1 250px;
 }
 
+.transac-title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
 .transac-container form .row .cols .title{
     font-size: 24px;;
     padding-bottom: 5px;
     font-weight: 500;
 }
 .transac-container form .row .cols .inputBox{
-margin: 15px 0;
+margin: 30px 0;
 }
 .transac-container form .row .cols .inputBox span{
     margin-bottom: 10px;
     display: block;
+    font-weight: 500;
+    /* color: #FFB800; */
 }
 .transac-container form .row .cols .inputBox input{
     width: 100%;
@@ -44,6 +53,7 @@ margin: 15px 0;
     text-transform: none;
     border-radius: 10px;
     background-color: #191818;
+    color: #ffff;
 }
 .transac-container form .row .cols .inputBox input:focus{
     border: 1px solid #D1AB47;
