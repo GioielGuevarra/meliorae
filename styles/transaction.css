@@ -1,0 +1,103 @@
+body{
+    background-color: #0f0f0f;
+}
+.transac-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 70px;
+}
+
+.transac-container form{
+    padding: 30px;
+    background: #191818;
+    border-radius: 10px;
+
+}
+
+.transac-container form .row{
+    gap: 15px;
+}
+
+.transac-container form .row .cols{
+    flex:1 1 250px;
+}
+
+.transac-container form .row .cols .title{
+    font-size: 24px;;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+.transac-container form .row .cols .inputBox{
+margin: 15px 0;
+}
+.transac-container form .row .cols .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+.transac-container form .row .cols .inputBox input{
+    width: 100%;
+    border: 1px solid #3f3d3d;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: none;
+    border-radius: 10px;
+    background-color: #191818;
+}
+.transac-container form .row .cols .inputBox input:focus{
+    border: 1px solid #D1AB47;
+}
+.transac-container form .row .cols .flex{
+    display: flex;
+    gap: 15px;
+}
+.transac-container form .row .cols .flex .inputBox{
+    margin-top: 5px;
+}
+.transac-container form .row .cols .inputBox img{
+    height: 55px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px r#000);
+}
+.dropdown-menu{
+    width: 100%;
+    border: 1px solid #3f3d3d;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: none;
+    border-radius: 10px;
+    background-color: #191818;
+    color: #ffffff;
+}
+.submit-button{
+    background-color: #D1AB47;
+    color: #0F0F0F;
+    font: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 60px;
+    cursor: pointer;
+    width: 100%;
+    height:100%;
+}
+.submit-button:hover{
+    background-color: #9b7a28;
+    font-weight: 600;
+}
+.transac-setup{
+    padding: 0px 0px 100px;
+    background-color: #0F0F0F;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.payment-section{
+    background-color: #0F0F0F;
+    padding: 100px 20px;
+}
+.checkout{
+    padding:30px 0;
+}
