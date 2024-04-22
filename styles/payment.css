@@ -1,0 +1,146 @@
+body{
+    background-color: #0f0f0f;
+}
+.order-placement{
+    padding: 0px 0px 100px;
+    background-color: #0F0F0F;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.payment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 100px 20px;
+
+}
+.info-card{
+    width: 100%;
+    max-width: 1180px;
+    /* border: 1px solid white; */
+    background-color: #191818;
+    border-radius: 10px;
+  
+}
+.info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 70px;
+    gap:10px;
+    font-size: 16px;
+}
+
+.user-info{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.edit-button img{
+    width:30px;
+    cursor: pointer;
+}
+.order-card{
+    width: 100%;
+    max-width: 1180px;
+    /* border: 1px solid white; */
+    background-color: #191818;
+    border-radius: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+/* table, thead, th, tbody, tr, td{
+    border-bottom: 1px solid #3f3d3d;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+} */
+.cart-table thead, 
+.cart-table tbody, 
+.cart-table-head tr, 
+.cart-table-head tr th, 
+.cart-table-body tr,
+.cart-table-body tr td{
+    border-bottom: 1px solid #3f3d3d;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+th{
+    font-weight: 300;
+    font-size: 20px;
+}
+.cart-img{
+    max-width: 200px;
+    max-height:200px;
+    min-width: 100px;
+    min-height: 100px;
+}
+.cart-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cart-title{
+   font-size: 20px;
+}
+.item-total{
+    font-size: 16px;
+}
+.order-container{
+    width:100%
+}
+.payment-card{
+    width: 100%;
+    max-width: 1180px;
+    /* border: 1px solid white; */
+    background-color: #191818;
+    border-radius: 10px;
+}
+.payment-table thead,
+.payment-table thead tr,
+.payment-table thead tr th{
+    border-bottom: 1px solid #3f3d3d;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.payment-table tbody,
+.payment-table tbody tr,
+.payment-table tbody tr td{
+    border-bottom: none;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pay-container{
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.placeorder-button{
+    background-color: #D1AB47;
+    color: #0F0F0F;
+    font: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 60px;
+    cursor: pointer;
+    width: 100%;
+    height:100%;
+}
+.placeorder-button:hover{
+    background-color: #9b7a28;
+    font-weight: 600;
+}
