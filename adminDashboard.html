@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliorae</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/adminDashboard.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="first-section">
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="logo"><a href="index.html">MELIORAE</a></div>
+                <div class="nav-links">
+                    <a href="adminEmails.html">Emails</a>
+                    <a href="adminInventory.html">Inventory</a>
+                    <a href="adminOrders.html">Orders</a>
+                </div>
+                <div class="nav-icons">
+                    <a href="signup.html">
+                        <div class="profile-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" /></svg></div>
+                    </a>
+                    <a href="cart.html">
+                        <div class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cart</title><path d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" /></svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-section"> 
+        <div class="dashboard-container">
+        <div class="welcome">
+            <a>Welcome Admin!</a>
+        </div>  
+            <div class="first-container">
+                <div class="first-container-card">
+                    <div class="card-container">
+                        <div class="card-info">
+                            <div class="title-info">Monthly Earnings</div>
+                            <div class="amount-info">Php 21,300</div>
+                        </div>
+                        <div class="card-icons">
+                            <img src="img/money.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="first-container-card">
+                    <div class="card-container">
+                        <div class="card-info">
+                            <div class="title-info">Pending Orders</div>
+                            <div class="amount-info">24</div>
+                        </div>
+                        <div class="card-icons">
+                            <img src="img/pending.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="first-container-card">
+                    <div class="card-container">
+                        <div class="card-info">
+                            <div class="title-info">Website Visits</div>
+                            <div class="amount-info">5,931</div>
+                        </div>
+                        <div class="card-icons">
+                            <img src="img/visit.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-container">
+                <div class="email-container">
+                    <div class="card-email">
+                        <div class="second-title">Received emails</div>
+                        <div class="emails-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="email-items">
+                                        <td class="email-name"> 
+                                            <a>John Doe</a>
+                                        </td>
+                                        <td class="email-email">
+                                            <a>johndoe123@gmail.com</a>
+                                        </td>
+                                        <td class="email-message">
+                                            <a>This is my message</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="email-items">
+                                        <td class="email-name"> 
+                                            <a>John Doe</a>
+                                        </td>
+                                        <td class="email-email">
+                                            <a>johndoe123@gmail.com</a>
+                                        </td>
+                                        <td class="email-message">
+                                            <a>This is my message</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="email-items">
+                                        <td class="email-name"> 
+                                            <a>John Doe</a>
+                                        </td>
+                                        <td class="email-email">
+                                            <a>johndoe123@gmail.com</a>
+                                        </td>
+                                        <td class="email-message">
+                                            <a>This is my message</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="email-items">
+                                        <td class="email-name"> 
+                                            <a>John Doe</a>
+                                        </td>
+                                        <td class="email-email">
+                                            <a>johndoe123@gmail.com</a>
+                                        </td>
+                                        <td class="email-message">
+                                            <a>This is my message</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="viewbutton">
+                            <a href="adminEmails.html"><button class="view-button">View Table</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="products-container">
+                    <div class="card-products">
+                        <div class="second-title">Most Popular Products</div>
+                        <div class="products-table">
+                            <table>
+                                <tbody>
+                                    <tr class="product-items">
+                                        <td class="product-img"> 
+                                            <img src="img/bestseller1.jpg">
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-items">
+                                        <td class="product-img"> 
+                                            <img src="img/bestseller1.jpg">
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="product-items">
+                                        <td class="product-img"> 
+                                            <img src="img/bestseller1.jpg">
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="third-container">
+                <div class="orders-container">
+                    <div class="card-email">
+                        <div class="second-title">Pending Orders</div>
+                        <div class="order-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Customer ID</th>
+                                        <th scope="col">Product ID</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="order-items">
+                                        <td class="order-id"> 
+                                            <a>131</a>
+                                        </td>
+                                        <td class="customer-id">
+                                            <a>213</a>
+                                        </td>
+                                        <td class="product-id">
+                                            <a>75</a>
+                                        </td>
+                                        <td class="quantity-data">
+                                            <a>12</a>
+                                        </td>
+                                        <td class="status">
+                                            <a>To Ship</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-items">
+                                        <td class="order-id"> 
+                                            <a>131</a>
+                                        </td>
+                                        <td class="customer-id">
+                                            <a>213</a>
+                                        </td>
+                                        <td class="product-id">
+                                            <a>75</a>
+                                        </td>
+                                        <td class="quantity-data">
+                                            <a>12</a>
+                                        </td>
+                                        <td class="status">
+                                            <a>To Ship</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-items">
+                                        <td class="order-id"> 
+                                            <a>131</a>
+                                        </td>
+                                        <td class="customer-id">
+                                            <a>213</a>
+                                        </td>
+                                        <td class="product-id">
+                                            <a>75</a>
+                                        </td>
+                                        <td class="quantity-data">
+                                            <a>12</a>
+                                        </td>
+                                        <td class="status">
+                                            <a>To Ship</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-items">
+                                        <td class="order-id"> 
+                                            <a>131</a>
+                                        </td>
+                                        <td class="customer-id">
+                                            <a>213</a>
+                                        </td>
+                                        <td class="product-id">
+                                            <a>75</a>
+                                        </td>
+                                        <td class="quantity-data">
+                                            <a>12</a>
+                                        </td>
+                                        <td class="status">
+                                            <a>To Ship</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-items">
+                                        <td class="order-id"> 
+                                            <a>131</a>
+                                        </td>
+                                        <td class="customer-id">
+                                            <a>213</a>
+                                        </td>
+                                        <td class="product-id">
+                                            <a>75</a>
+                                        </td>
+                                        <td class="quantity-data">
+                                            <a>12</a>
+                                        </td>
+                                        <td class="status">
+                                            <a>To Ship</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="viewbutton">
+                            <a href="adminOrders.html"><button class="view-button">View Table</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="inventory-container">
+                    <div class="card-email">
+                        <div class="second-title">Product Inventory</div>
+                        <div class="inventory-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product ID</th>
+                                        <th scope="col">Category ID</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Stock Quantity</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="inventory-items">
+                                        <td class="product-id"> 
+                                            <a>111</a>
+                                        </td>
+                                        <td class="category-id">
+                                            <a>34</a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                        <td class="quantity-inventory">
+                                            <a>50</a>
+                                        </td>
+                                        <td class="price">
+                                            <a>Php 150.00</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="inventory-items">
+                                        <td class="product-id"> 
+                                            <a>111</a>
+                                        </td>
+                                        <td class="category-id">
+                                            <a>34</a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                        <td class="quantity-inventory">
+                                            <a>50</a>
+                                        </td>
+                                        <td class="price">
+                                            <a>Php 150.00</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="inventory-items">
+                                        <td class="product-id"> 
+                                            <a>111</a>
+                                        </td>
+                                        <td class="category-id">
+                                            <a>34</a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                        <td class="quantity-inventory">
+                                            <a>50</a>
+                                        </td>
+                                        <td class="price">
+                                            <a>Php 150.00</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="inventory-items">
+                                        <td class="product-id"> 
+                                            <a>111</a>
+                                        </td>
+                                        <td class="category-id">
+                                            <a>34</a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                        <td class="quantity-inventory">
+                                            <a>50</a>
+                                        </td>
+                                        <td class="price">
+                                            <a>Php 150.00</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="inventory-items">
+                                        <td class="product-id"> 
+                                            <a>111</a>
+                                        </td>
+                                        <td class="category-id">
+                                            <a>34</a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a>Classic Chocolate Brownies</a>
+                                        </td>
+                                        <td class="quantity-inventory">
+                                            <a>50</a>
+                                        </td>
+                                        <td class="price">
+                                            <a>Php 150.00</a>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="viewbutton">
+                            <a href="adminOrders.html"><button class="view-button">View Table</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

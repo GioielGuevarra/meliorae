@@ -1,0 +1,136 @@
+body{
+    background-color: #0f0f0f;
+}
+.dashboard-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+}
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1180px;
+    width: 100%;
+}
+.first-container{
+display: flex;
+gap: 20px;
+
+}
+.first-container-card{ 
+    width:390px;
+    display:flex ;
+    background-color: #191818;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    padding: 20px 30px;
+
+}
+.title-info{
+    font-size: 20px;
+    font-weight: 500;
+}
+.amount-info{
+    font-size: 16px;
+}
+.second-container{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, thead, th, tbody, tr, td{
+    border-bottom: 1px solid #3f3d3d;
+    padding: 15px 30px;
+    text-align: center;
+}
+th{
+    font-weight: 300;
+    font-size: 20px;
+}
+.second-title{
+    font-size: 20px;
+    padding: 20px 30px;
+    border-bottom: 1px solid #3f3d3d;
+}
+.email-container{
+    background-color: #191818;
+    border-radius: 10px;
+    display: flex;
+    flex: 1 0 0;
+}
+.view-button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #3f3d3d;
+    font: inherit;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 8px 60px;
+    cursor: pointer;
+
+}
+.view-button:hover{
+    background-color: #3f3d3d;
+    font-weight: 600;
+}
+.card-email{
+    gap:20px;
+    width: 100%;
+}
+.viewbutton{
+    display: flex;
+    justify-content: end;
+    padding: 20px 70px;
+}
+.welcome a{
+    padding: 0px 0px 100px;
+    background-color: #0F0F0F;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.products-container{
+    background-color: #191818;
+    border-radius: 10px;
+}
+.card-product{
+    gap:20px;
+}
+.product-img img{
+    width: 70px;
+    border-radius: 10px;
+}
+.third-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.orders-container{
+    background-color: #191818;
+    border-radius: 10px;
+}
+.inventory-container{
+    background-color: #191818;
+    border-radius: 10px;
+}
