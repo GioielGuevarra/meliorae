@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliorae | Profile</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/profileSetup.css">
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="logo"><a href="index.html">MELIORAE</a></div>
+            <div class="nav-links">
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="nav-icons">
+                <a href="signup.html">
+                    <div class="profile-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" /></svg></div>
+                </a>
+                <a href="cart.html">
+                    <div class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cart</title><path d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" /></svg></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="setup-section">
+        <div class="edit-profile">Edit Profile</div>
+        <div class="profile-container">   
+             <div class="title">Profile</div>
+            <div class="profile-card">
+                <div class="profile-picture">
+                    <div class="title">Profile Picture</div>
+                    <img src="img/profilepic.png">
+                    <div class="select-image">
+                        <a href="#"><button class="select-button">Select Image</button></a>
+                     </div>
+                </div>
+                <div class="profile-info">
+                    <form action="#">
+                        <div class="row">
+                            <div class="cols">
+                                <div class="flex"> 
+                                    <div class="inputBox">
+                                        <span>First Name </span>
+                                        <input type="text" placeholder="John">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Last Name </span>
+                                        <input type="text" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Email </span>
+                                    <input type="text" placeholder="johndoe123@gmail.com">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Phone Number </span>
+                                    <input type="text" placeholder="johndoe123@gmail.com">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Password </span>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>  
+        <div class="address-container">
+            <div class="title">Address</div>
+            <div class="profile-card">
+                <div class="profile-info">
+                    <form action="#">
+                        <div class="row">
+                            <div class="cols">
+                                <div class="flex"> 
+                                    <div class="inputBox">
+                                        <span>Region</span>
+                                        <input type="text" placeholder="Region">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Province</span>
+                                        <input type="text" placeholder="Province">
+                                    </div>
+                                </div>
+                                <div class="flex"> 
+                                    <div class="inputBox">
+                                        <span>City</span>
+                                        <input type="text" placeholder="City">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Barangay</span>
+                                        <input type="text" placeholder="Barangay">
+                                    </div>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Street Name, Building, House No. </span>
+                                    <input type="text" placeholder="Street Name, Building, House No." required>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+            <div class="save">
+            <a href="profile.html"><button class="save-button">Save Changes</button></a>
+            </div>
+        </div>
+       
+    </div>
+    <div class="sixth-section">
+        <div class="footer">
+            <div class="footer-g1">
+                <div class="footer-logo">MELIORAE</div>
+                <div class="copyright">© 2022 Meliorae | All rights reserved</div>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/melioraee">
+                        <img src="img/facebook logo.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/email logo.svg" alt="email">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-g2">
+                <div class="footer-about">About</div>
+                <div class="footer-desc">Welcome to Meliorae, where a passionate team comes together to share their love for baking cozy pastries.</div>
+            </div>
+            <div class="footer-g3">
+                <div class="footer-qlinks">Quick Links</div>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <a href="#"><button class="footer-button">Order Now</button></a>
+        </div>
+    </div>
+</body>
+</html>
