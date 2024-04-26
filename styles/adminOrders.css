@@ -1,0 +1,112 @@
+body{
+    background-color: #0f0f0f;
+}
+.table-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1180px;
+    width: 100%;
+}
+.first-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.orders-container{
+    background-color: #191818;
+    border-radius: 10px;
+}
+.card{
+    gap:20px;
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, thead, th, tbody, tr, td{
+    border-bottom: 1px solid #3f3d3d;
+    padding: 15px 30px;
+    text-align: center;
+}
+th{
+    font-weight: 300;
+    font-size: 20px;
+}
+.title{
+    font-size: 24px;
+    padding: 20px 30px;
+    border-bottom: 1px solid #3f3d3d;
+}
+.pageno{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #3f3d3d;
+    font: inherit;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.pageno:hover{
+    background-color: #3f3d3d;
+    font-weight: 600;
+}
+.table-control{
+    display: flex;
+    justify-content: end;
+    padding: 20px 50px;
+}
+.prevnext{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+.control-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 20px;
+}
+.control-buttons button{
+    padding: 10px 70px;;
+}
+.ctrl-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #3f3d3d;
+    font: inherit;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 70px;
+}
+.ctrl-btn:hover{
+    background-color: #3f3d3d;
+    font-weight: 600;
+}
