@@ -77,6 +77,10 @@ margin: 20px 0;
     margin-top: 20px;
     filter: drop-shadow(0 0 1px r#000);
 }
+
+.inputBox .payment-img {
+    cursor: pointer;
+}
 .dropdown-menu{
     width: 100%;
     border: 1px solid #3f3d3d;
