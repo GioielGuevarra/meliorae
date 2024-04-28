@@ -15,15 +15,18 @@ body {
 .navbar-container {
     background-color: #0F0F0F;
     padding: 20px;
-}
-
-.sticky {
-    background-color: #0F0F0F;
-    border-bottom: 1px solid rgb(59, 59, 59);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
+}
+
+.sticky {
+    border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.navbar-container + div {
+    padding-top: 150px;
 }
 
 .navbar {

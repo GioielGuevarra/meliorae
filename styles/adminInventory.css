@@ -8,7 +8,7 @@ body{
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding: 50px;
+    padding: 100px;
 }
 .table-container{
     display: flex;
@@ -96,7 +96,7 @@ th{
 .control-buttons button{
     padding: 10px 70px;;
 }
-.ctrl-btn{
+.btn{
     background-color: transparent;
     color: #fff;
     border: 2px solid #3f3d3d;
@@ -106,7 +106,154 @@ th{
     cursor: pointer;
     padding: 10px 70px;
 }
-.ctrl-btn:hover{
+.btn:hover{
     background-color: #3f3d3d;
     font-weight: 600;
+}
+
+.add-modal-backdrop.on,
+.edit-modal-backdrop.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.542);
+}
+
+.add-modal.hidden,
+.edit-modal.hidden {
+    display: none;
+}
+
+.add-modal,
+.edit-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.5em 3em;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-title {
+    color: #A9792B;
+}
+
+.input-group.text,
+.input-group.number {
+    position: relative;
+}
+
+.input-group.text input,
+.input-group.number input,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 350px;
+    background-color: #E8E8E8;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #A9792B;
+    border-radius: 5px;
+    outline: none;
+}
+
+.number  {
+    display: flex;
+    gap: 30px;
+}
+
+.number .input-group.number input {
+    width: 80px;
+}
+
+.prod-desc {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 5px;
+}
+
+textarea {
+    max-width: 350px;
+}
+
+.input-group.text label,
+.input-group.number label {
+    color: #8b8b8b;
+}
+
+.input-group.text label,
+.input-group.number label {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+}
+
+.input-group.checkbox {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input#input-read {
+    width: 20px;
+}
+
+.input-group input:focus::placeholder {
+    color: transparent;
+}
+
+.input-group input:focus~label,
+.input-group input:not(:placeholder-shown)~label {
+    color: black;
+    background-color: #E8E8E8;
+    font-size: 12px;
+    padding: 2px;
+    top: 0;
+}
+
+.input-group input:invalid:not(:placeholder-shown),
+.input-group select:invalid,
+textarea:invalid {
+    border: 1px solid red;
+}
+
+.input-group input:valid:not(:placeholder-shown),
+.input-group select:valid,
+textarea:valid {
+    border: 1px solid green;
+}
+
+.submit button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dfb873;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit button:hover{
+    background-color: #d7ac66;
 }
