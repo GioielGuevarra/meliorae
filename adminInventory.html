@@ -6,11 +6,10 @@
     <title>Admin | Inventory</title>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/adminInventory.css">
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-    <script src="script.js" defer></script>
+    <script src="adminInventory.js" defer></script>
 </head>
 <body>
     <div class="first-section">
@@ -29,6 +28,98 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="add-modal-backdrop"></div>
+    <div class="edit-modal-backdrop"></div>
+    <div class="add-modal hidden">
+        <h1 class="modal-title">Brownie Information</h1>
+        <form action="#" id="form">
+            <div class="input-group text">
+                <select name="product-category" id="categories" required>
+                    <option value disabled hidden selected>Choose category</option>
+                    <option value="classic">Classic - 30</option>
+                    <option value="gourmet">Gourmet - 31</option>
+                    <option value="milkshake">Milkshake - 32</option>
+                    <option value="bars and squares">Bars and Squares - 33</option>
+                    <option value="sundaes">Sundaes - 34</option>
+                    <option value="custom">Custom Gift Box - 35</option>
+                </select>
+            </div>
+            <div class="input-group text">
+                <input type="text" id="product-name" name="product-name" placeholder="Product Name" pattern="^[a-z.A-Z ]+$" required>
+                <label for="product-name">Product Name</label>
+            </div>
+            <div class="number">
+                <div class="input-group number">
+                    <input type="number" name="product-quantity" id="product-quantity" placeholder="Quantity" min="1" value="1" required>
+                    <label for="product-quantity">Quantity</label>
+                </div>
+                <div class="input-group number">
+                    <input type="number" name="product-price" id="product-price" placeholder="Price" min="1" value="150" required>
+                    <label for="product-price">Price</label>
+                </div>
+            </div>
+            <div class="input-group number">
+                <input type="date" name="product-mfd" id="product-mfd" required>
+                <label for="product-mfd">Manufacture Date</label>
+            </div>
+            <div class="input-group number">
+                <input type="date" name="product-ed" id="product-ed" required>
+                <label for="product-ed">Expiration Date</label>
+            </div>
+            <div class="prod-desc">
+                <div class="prd">Product Description</div>
+                <textarea name="product-description" id="product-description" rows="5" placeholder="Max characters: 150" maxlength="150" required></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit">Add Brownie</button>
+            </div>
+        </form>
+    </div>
+    <div class="edit-modal hidden">
+        <h1 class="modal-title">Brownie Information</h1>
+        <form action="#" id="form">
+            <div class="input-group text">
+                <select name="product-category" id="categories" required>
+                    <option value disabled hidden>Choose category</option>
+                    <option value="classic" selected>Classic - 30</option>
+                    <option value="gourmet">Gourmet - 31</option>
+                    <option value="milkshake">Milkshake - 32</option>
+                    <option value="bars and squares">Bars and Squares - 33</option>
+                    <option value="sundaes">Sundaes - 34</option>
+                    <option value="custom">Custom Gift Box - 35</option>
+                </select>
+            </div>
+            <div class="input-group text">
+                <input type="text" id="product-name" name="product-name" placeholder="Product Name" pattern="^[a-z.A-Z ]+$" required value="Classic Chocolate Brownies">
+                <label for="product-name">Product Name</label>
+            </div>
+            <div class="number">
+                <div class="input-group number">
+                    <input type="number" name="product-quantity" id="product-quantity" placeholder="Quantity" min="1" value="50" required>
+                    <label for="product-quantity">Quantity</label>
+                </div>
+                <div class="input-group number">
+                    <input type="number" name="product-price" id="product-price" placeholder="Price" min="1" value="150" required>
+                    <label for="product-price">Price</label>
+                </div>
+            </div>  
+            <div class="input-group number">
+                <input type="date" value="2024-12-20" name="product-mfd" id="product-mfd" required>
+                <label for="product-mfd">Manufacture Date</label>
+            </div>
+            <div class="input-group number">
+                <input type="date" value="2024-12-27" name="product-ed" id="product-ed" required>
+                <label for="product-ed">Expiration Date</label>
+            </div>
+            <div class="prod-desc">
+                <div class="prd">Product Description</div>
+                <textarea name="product-description" id="product-description" rows="5" placeholder="Max characters: 150" maxlength="150" required>Rich and fudgy chocolate brownie made with premium cocoa.</textarea>
+            </div>
+            <div class="submit">
+                <button type="submit">Edit Brownie</button>
+            </div>
+        </form>
     </div>
     <div class="table-section">
         <div class="table-container">
@@ -235,9 +326,9 @@
                 </div>
             </div>
             <div class="control-buttons">
-                <a href="#"><button class="ctrl-btn">Add</button></a>
-                <a href="#"><button class="ctrl-btn">Edit</button></a>
-                <a href="#"><button class="ctrl-btn">Delete</button></a>
+                <a href="#"><button class="add btn">Add</button></a>
+                <a href="#"><button class="edit btn">Edit</button></a>
+                <a href="#"><button class="delete btn">Delete</button></a>
             </div>
         </div>
     </div>
